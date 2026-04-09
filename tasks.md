@@ -33,9 +33,10 @@ Python Piscine (C00 → C08 Equivalent)
 5. Count vowels and consonants
 6. Check if a string is palindrome
 7. Find first occurrence of a character
-8. Find last occurrence of a character
-9. Compare two strings
-10. Remove whitespace from a string
+8. Find last occurrence of a character 
+9. Find total occurrence of a character
+10. Compare two strings
+11. Remove whitespace from a string
 
 🔹 C03 – Advanced String Manipulation
 
@@ -90,8 +91,6 @@ Python Piscine (C00 → C08 Equivalent)
 10. Parse key=value arguments
 
 🔹 C07 – Memory Concepts → Python Style
-
-
 
 (In Python, this becomes references, mutability, copying)
 
