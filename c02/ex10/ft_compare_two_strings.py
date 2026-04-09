@@ -1,23 +1,21 @@
-def ft_strlen(string):
-    length = 0
-    for i in string:
-        length = length + 1
-    return length
-
-def ft_compare_two_strings(string1, string2):
-    answer1 = ft_strlen(string1)
-    answer2 = ft_strlen(string2)
-    # count = 0
-    # for i in range(0, answer):
-    if (string1 == string2):
-        return 1
+def ft_strcmp(string1, string2):
+    if (len(string1) == len(string2)):
+        for i in range(0, len(string1)):
+            if (string1[i] != string2[i]):
+                return(ord(string1[i]) - ord(string2[i]))
+    
+    else:
+        for i in range(0, min(len(string1), len(string2))):
+            if (string1[i] != string2[i]):
+                return(ord(string1[i]) - ord(string2[i]))
+        return (len(string1) - len(string2))
     return 0
 
 N1 = input("Please input the string1: ")
 N2 = input("Please input the string2: ")
 
-answer1 = ft_compare_two_strings(N1, N2)
-if answer1 == 1:
-    print("The two strings are same.")
+answer1 = ft_strcmp(N1, N2)
+if answer1 != 0:
+    print(f"The two strings are different with a value of {answer1}.")
 else:
-    print("The two strings are not same.")
+    print("The two strings are same.")
